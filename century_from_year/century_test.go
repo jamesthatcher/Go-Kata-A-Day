@@ -14,7 +14,7 @@ func itShouldReturnOfThe(expected, year int) error {
 	testResult := century(year)
 
 	if testResult != expected {
-		return fmt.Errorf("There's an error. %d returned %d instead of %d", year, testResult, expected)
+		return fmt.Errorf("want %d; got %d", testResult, expected)
 	}
 	return godog.ErrPending
 }
