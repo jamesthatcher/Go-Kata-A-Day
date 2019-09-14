@@ -1,18 +1,51 @@
 package longest_vowel_chain
 
-import (
-	. "github.com/onsi/ginkgo"
-	. "github.com/onsi/gomega"
-)
+import "github.com/DATA-DOG/godog"
 
-var _ = Describe("Example tests", func() {
-	It("Basic tests", func() {
-		Expect(Solve("codewarriors")).To(Equal(2))
-		Expect(Solve("suoidea")).To(Equal(3))
-		Expect(Solve("ultrarevolutionariees")).To(Equal(3))
-		Expect(Solve("strengthlessnesses")).To(Equal(1))
-		Expect(Solve("cuboideonavicuare")).To(Equal(2))
-		Expect(Solve("chrononhotonthuooaos")).To(Equal(5))
-		Expect(Solve("iiihoovaeaaaoougjyaw")).To(Equal(8))
-	})
-})
+func iUseTheTheCodewarriors() error {
+	return godog.ErrPending
+}
+
+func iCountTheConsecutiveVowels() error {
+	return godog.ErrPending
+}
+
+func itShouldReturnTheOfTheLongestVowelChain(arg1 int) error {
+	return godog.ErrPending
+}
+
+func iUseTheTheSuoidea() error {
+	return godog.ErrPending
+}
+
+func iUseTheTheUltrarevolutionariees() error {
+	return godog.ErrPending
+}
+
+func iUseTheTheStrengthlessnesses() error {
+	return godog.ErrPending
+}
+
+func iUseTheTheCuboideonavicuare() error {
+	return godog.ErrPending
+}
+
+func iUseTheTheChrononhotonthuooaos() error {
+	return godog.ErrPending
+}
+
+func iUseTheTheIiihoovaeaaaoougjyaw() error {
+	return godog.ErrPending
+}
+
+func FeatureContext(s *godog.Suite) {
+	s.Step(`^I use the the codewarriors$`, iUseTheTheCodewarriors)
+	s.Step(`^I count the consecutive vowels$`, iCountTheConsecutiveVowels)
+	s.Step(`^it should return the (\d+) of the longest vowel chain$`, itShouldReturnTheOfTheLongestVowelChain)
+	s.Step(`^I use the the suoidea$`, iUseTheTheSuoidea)
+	s.Step(`^I use the the ultrarevolutionariees$`, iUseTheTheUltrarevolutionariees)
+	s.Step(`^I use the the strengthlessnesses$`, iUseTheTheStrengthlessnesses)
+	s.Step(`^I use the the cuboideonavicuare$`, iUseTheTheCuboideonavicuare)
+	s.Step(`^I use the the chrononhotonthuooaos$`, iUseTheTheChrononhotonthuooaos)
+	s.Step(`^I use the the iiihoovaeaaaoougjyaw$`, iUseTheTheIiihoovaeaaaoougjyaw)
+}
