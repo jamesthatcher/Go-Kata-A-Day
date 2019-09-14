@@ -5,16 +5,16 @@ Feature: Longest vowel chain
   longest vowel substring.
 
   Scenario Outline: Solve
-    Given I use the the <word>
-    When I count the consecutive vowels
-    Then it should return the <count> of the longest vowel chain
+    Given I need to count the consecutive vowels
+    When I count <words>
+    Then it should return <count> of longest vowel chain in <words>
 
     Examples:
-      | word                  | count |
-      | codewarriors          | 2     |
-      | suoidea               | 3     |
-      | ultrarevolutionariees | 3     |
-      | strengthlessnesses    | 1     |
-      | cuboideonavicuare     | 2     |
-      | chrononhotonthuooaos  | 5     |
-      | iiihoovaeaaaoougjyaw  | 8     |
+      | words                   | count |
+      | "codewarriors"          | 2     |
+      | "suoidea"               | 3     |
+      | "ultrarevolutionariees" | 3     |
+      | "strengthlessnesses"    | 1     |
+      | "cuboideonavicuare"     | 2     |
+      | "chrononhotonthuooaos"  | 5     |
+      | "iiihoovaeaaaoougjyaw"  | 8     |

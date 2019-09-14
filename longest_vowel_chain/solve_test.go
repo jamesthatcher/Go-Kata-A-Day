@@ -1,51 +1,29 @@
 package longest_vowel_chain
 
-import "github.com/DATA-DOG/godog"
+import (
+	"fmt"
+	"github.com/DATA-DOG/godog"
+)
 
-func iUseTheTheCodewarriors() error {
-	return godog.ErrPending
+func iNeedToCountTheConsecutiveVowels() error {
+	return nil
 }
 
-func iCountTheConsecutiveVowels() error {
-	return godog.ErrPending
+func iCount(word string) error {
+	Solve(word)
+	return nil
 }
 
-func itShouldReturnTheOfTheLongestVowelChain(arg1 int) error {
-	return godog.ErrPending
-}
-
-func iUseTheTheSuoidea() error {
-	return godog.ErrPending
-}
-
-func iUseTheTheUltrarevolutionariees() error {
-	return godog.ErrPending
-}
-
-func iUseTheTheStrengthlessnesses() error {
-	return godog.ErrPending
-}
-
-func iUseTheTheCuboideonavicuare() error {
-	return godog.ErrPending
-}
-
-func iUseTheTheChrononhotonthuooaos() error {
-	return godog.ErrPending
-}
-
-func iUseTheTheIiihoovaeaaaoougjyaw() error {
-	return godog.ErrPending
+func itShouldReturnOfLongestVowelChainIn(expected int, word string) error {
+	testResult := Solve(word)
+	if testResult != expected {
+		return fmt.Errorf("There's an error. %s returned %d instead of %d", word, testResult, expected)
+	}
+	return nil
 }
 
 func FeatureContext(s *godog.Suite) {
-	s.Step(`^I use the the codewarriors$`, iUseTheTheCodewarriors)
-	s.Step(`^I count the consecutive vowels$`, iCountTheConsecutiveVowels)
-	s.Step(`^it should return the (\d+) of the longest vowel chain$`, itShouldReturnTheOfTheLongestVowelChain)
-	s.Step(`^I use the the suoidea$`, iUseTheTheSuoidea)
-	s.Step(`^I use the the ultrarevolutionariees$`, iUseTheTheUltrarevolutionariees)
-	s.Step(`^I use the the strengthlessnesses$`, iUseTheTheStrengthlessnesses)
-	s.Step(`^I use the the cuboideonavicuare$`, iUseTheTheCuboideonavicuare)
-	s.Step(`^I use the the chrononhotonthuooaos$`, iUseTheTheChrononhotonthuooaos)
-	s.Step(`^I use the the iiihoovaeaaaoougjyaw$`, iUseTheTheIiihoovaeaaaoougjyaw)
+	s.Step(`^I need to count the consecutive vowels$`, iNeedToCountTheConsecutiveVowels)
+	s.Step(`^I count "([^"]*)"$`, iCount)
+	s.Step(`^it should return (\d+) of longest vowel chain in "([^"]*)"$`, itShouldReturnOfLongestVowelChainIn)
 }
