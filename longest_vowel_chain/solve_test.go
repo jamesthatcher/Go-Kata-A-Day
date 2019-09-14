@@ -5,8 +5,8 @@ import (
 	. "github.com/onsi/gomega"
 )
 
-var _ = Describe("Example tests",func() {
-	It("Basic tests",func() {
+var _ = Describe("Example tests", func() {
+	It("Basic tests", func() {
 		Expect(Solve("codewarriors")).To(Equal(2))
 		Expect(Solve("suoidea")).To(Equal(3))
 		Expect(Solve("ultrarevolutionariees")).To(Equal(3))

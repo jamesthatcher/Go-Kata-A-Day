@@ -10,6 +10,8 @@ import "fmt"
 func Solve(s string) int {
 	for pos, char := range s {
 		fmt.Println(char, pos)
+		fmt.Println(pos)
 	}
+
 	return 0
 }
