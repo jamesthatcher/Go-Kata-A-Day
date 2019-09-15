@@ -6,8 +6,8 @@ I am challenging myself to work towards solving a Kata from CodeWars everyday in
 
 | Kata Count |
 |------------|
-| 3 |
+| 4 |
 
 | Kata Max Kyu |
 |------------|
-| 7 |
+| 6 |
