@@ -14,9 +14,9 @@ func itShouldReturnOfThe(expected, year int) error {
 	testResult := century(year)
 
 	if testResult != expected {
-		return fmt.Errorf("want %d; got %d", testResult, expected)
+		return fmt.Errorf("want %d; got %d", expected, testResult)
 	}
-	return godog.ErrPending
+	return nil
 }
 
 func FeatureContext(s *godog.Suite) {
