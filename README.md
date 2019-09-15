@@ -6,7 +6,7 @@ I am challenging myself to work towards solving a Kata from CodeWars everyday in
 
 | Kata Count |
 |------------|
-| 1 |
+| 3 |
 
 | Kata Max Kyu |
 |------------|

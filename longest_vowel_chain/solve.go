@@ -1,14 +1,14 @@
 package longest_vowel_chain
 
-// The vowel substrings in the word codewarriors are o,e,a,io.
-// The longest of these has a length of 2. Given a lowercase string that
-// has alphabetic characters only and no spaces, return the length of the
-// longest vowel substring.
+import "regexp"
 
 func Solve(s string) int {
-	//for pos, char := range s {
-	//	fmt.Println(char, pos)
-	//	fmt.Println(pos)
-	//}
-	return len(s)
+	var n int
+	r := regexp.MustCompile(`[aeiou]+`).FindAllString(s, -1)
+	for _, v := range r {
+		if len(v) > n {
+			n = len(v)
+		}
+	}
+	return n
 }

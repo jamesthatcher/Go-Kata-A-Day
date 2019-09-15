@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	out := longest_vowel_chain.Solve("ioppok")
+	out := longest_vowel_chain.Solve("codewarriors")
 	fmt.Println(out)
 	return
 }

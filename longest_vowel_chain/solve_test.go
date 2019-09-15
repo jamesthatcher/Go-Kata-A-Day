@@ -17,7 +17,7 @@ func iCount(word string) error {
 func itShouldReturnOfLongestVowelChainIn(expected int, word string) error {
 	testResult := Solve(word)
 	if testResult != expected {
-		return fmt.Errorf("There's an error. %s returned %d instead of %d", word, testResult, expected)
+		return fmt.Errorf("want %d; got %d", expected, testResult)
 	}
 	return nil
 }
