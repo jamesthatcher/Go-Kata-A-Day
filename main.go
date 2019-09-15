@@ -1,12 +1,12 @@
 package main
 
 import (
-	"code_wars/longest_vowel_chain"
+	"code_wars/piano_kata_p1"
 	"fmt"
 )
 
 func main() {
-	out := longest_vowel_chain.Solve("codewarriors")
+	out := piano_kata_p1.BlackOrWhiteKey(200)
 	fmt.Println(out)
 	return
 }
