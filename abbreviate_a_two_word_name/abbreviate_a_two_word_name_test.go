@@ -13,6 +13,9 @@ func TestAbbrevName(t *testing.T) {
 	}{
 		{"should test that the solution returns the correct value", args{"Sam Harris"}, "S.H"},
 		{"should test that the solution returns the correct value", args{"Patrick Feenan"}, "P.F"},
+		{"should test that the solution returns the correct value", args{"Evan Cole"}, "E.C"},
+		{"should test that the solution returns the correct value", args{"P Favuzzi"}, "P.F"},
+		{"should test that the solution returns the correct value", args{"David Mendieta"}, "D.M"},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
