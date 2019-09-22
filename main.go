@@ -1,8 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"code_wars/if_you_can_read_this"
+	"fmt"
+)
 
 func main() {
-	fmt.Println([]string{" X yz", " x Yz", " x yZ"})
+	fmt.Println(if_you_can_read_this.ToNato("string"))
 	return
 }
