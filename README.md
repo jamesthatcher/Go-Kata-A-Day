@@ -6,7 +6,7 @@ I am challenging myself to work towards solving Katas from CodeWars in Go. I aim
 
 | Kata Count |
 |------------|
-| 6 |
+| 7 |
 
 | Kata Max Kyu |
 |------------|
